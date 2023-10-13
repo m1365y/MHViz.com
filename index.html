@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Health Visualizer | American Health Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="icon" href="https://mhviz.com/Pic/favicon.ico" type="image/x-icon">
+
+</head>
+<body style="font-family: 'Roboto', sans-serif;">
+
+    <div class="container mt-4 mb-4">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1><i class="fas fa-stethoscope mr-3"></i>Mapping Health Visualizer</h1>                
+                <h4>American Health Dashboard</h4>
+                <p class="lead">Explore the Dataset Interactively</p>
+                <hr/>
+                <!-- Buttons linking to specified URLs -->
+                <a href="https://mhviz.com/Obesity/Obesity.html" class="btn btn-primary mb-2">Obesity</a>
+                <a href="https://mhviz.com/COPD/COPD.html" class="btn btn-primary mb-2">COPD</a>
+                <a href="https://mhviz.com/CHD/CHD.html" class="btn btn-primary mb-2">Coronary Heart Disease</a>
+                <a href="https://mhviz.com/Diabetes/Diabetes.html" class="btn btn-primary mb-2">Diabetes</a>
+                <a href="https://mhviz.com/Cancer/Cancer.html" class="btn btn-primary mb-2">Cancer (except skin)</a>
+            </div>
+        </div>
+<hr/>
+        <!-- Images Section -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                                <p class="text-center">UI/UX Design 1</p>
+                <img src="https://mhviz.com/Pic/UIUX1.png" alt="UI/UX Design 1" class="img-responsive" style="width:100%;">
+
+            </div>
+            <div class="col-md-6">
+                                <p class="text-center">UI/UX Design 2</p>
+                <img src="https://mhviz.com/Pic/UIUX2.png" alt="UI/UX Design 2" class="img-responsive" style="width:100%;">
+
+            </div>
+        </div>
+
+        <!-- Goal of Project -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Goal of Project:</h3>
+                <p>Using two-year health data from the CDC to create visuals for the data and using an ML model to predict the outcome.</p>
+            </div>
+        </div>
+        
+        
+        
+        
+
+        <!-- Problem-Statement -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Problem-Statement:</h3>
+                <p>Visualization of the data is currently focused towards simple monitoring and tracking. This presents a unique challenge for visualization and interactivity; the new dashboard will solve for this by providing:</p>
+                <ul>
+                    <li>Improved Interactivity and data insights.</li>
+                    <li>Improved trend visualization featuring heat-mapping for data.</li>
+                    <li>Healthcare and Mental Health Resource Needs:</li>
+                    <li>Insurance levels across the United States (create a dashboard that allows users to see the various areas of the US that have coverage and the density of coverage).</li>
+                    <li>Display general healthcare & mental health trends across the US.</li>
+                </ul>
+                <p>Due to the heavy volume of data if we use all of the data points from the CDC (1 to 3 million datapoints per year), filtering on five (7) health data points and thirteen (13) states would be the best approach.</p>
+            </div>
+        </div>
+
+        <!-- Health data points -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Health data points:</h3>
+                <ul>
+                    <li>Cancer (except Skin)</li>
+                    <li>Coronary Heart Disease</li>
+                    <li>COPD</li>
+                    <li>Obesity</li>
+                    <li>Diabetes</li>
+                    <li>Health Insurance</li>
+                    <li>Annual Checkup</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Thirteen (13) states -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Thirteen (13) states:</h3>
+                <ul>
+                    <li>Alabama</li>
+                    <li>Arizona</li>
+                    <li>Arkansas</li>
+                    <li>California</li>
+                    <li>Colorado</li>
+                    <li>Connecticut</li>
+                    <li>Delaware</li>
+                    <li>District of Columbia</li>
+                    <li>Georgia</li>
+                    <li>Hawaii</li>
+                    <li>Idaho</li>
+                    <li>Illinois</li>
+                    <li>Indiana</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- For Machine Learning -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>For Machine Learning:</h3>
+                <p>We'll be using the KNN model since we have two years of data for comparison.</p>
+            </div>
+        </div>
+
+        <!-- Role Assignments -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Role Assignments:</h3>
+                <ul>
+                    <li><strong>Lead Developer: Masoud</strong> - Overall Design, Structure, and Implementation</li>
+                    <li><strong>Git Master – Nathir (Thursday)</strong></li>
+                    <ul>
+                        <li>Set-up Master Repo</li>
+                        <li>Settings: Collaborators</li>
+                        <li>README</li>
+                        <li>Git Pages</li>
+                    </ul>
+                    <li><strong>Database Engineering: Edwin & Ronald</strong></li>
+                    <ul>
+                        <li>ETL - includes extracting, filtering, sorting, dropping NaN, merging, concatenating, model testing, etc.</li>
+                        <li>Database Development (MySQL)</li>
+                    </ul>
+                    <li><strong>Flask (Nathir – Backup Dev)</strong></li>
+                    <li><strong>Front-End Development Team: Nathir, Edwin, Ronald, Masoud</strong></li>
+                    <ul>
+                        <li>User-Interface and Design (Figma front-end design)</li>
+                        <li>Javascript, CSS (bootstrap), HTML, Python, Pandas</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+   <!-- Footer (can be expanded upon if needed) -->
+    <footer class="text-center mt-4">
+        <p>&copy; 2023 Mapping Health Visualizer. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
